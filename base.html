@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog ANNAD</title>
+
+    <style>
+        .body {
+            font-family: "Arial", sans-serif;
+            background-color: #1a37ab; /* cambio porque antes estaba rojo */
+            color: #0b0b0b;
+            margin: 20px;
+            padding: 20px;
+        }
+        .nav{
+             font-family: "Arial", sans-serif;
+            background-color: #7e6ca3; /* cambio porque antes estaba rojo */
+            color: #0c0303;
+            margin: 10px;
+            padding: 10px;
+        }
+        }
+    </style>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='stilos.css') }}">
+</head>
+<body class="body">
+    <nav>
+        {% if session.username %}
+            ¡Hola {{ session.username }}! |
+            <a href="/">Inicio</a>
+            <a href="/dashboard">Dashboard</a>
+            <a href="/logout">Salir</a>
+        {% else %}
+            <a href="/">Inicio</a>
+            <a href="/login">Login</a>
+            <a href="/register">Registro</a>
+        {% endif %}
+    </nav>
+
+    <br>
+
+    {% for message in get_flashed_messages() %}
+        <p style="text-align:center; color:red; font-size:20px;">{{ message }}</p>
+    {% endfor %}
+
+    {% block content %}{% endblock %}
+</body>
+</html>

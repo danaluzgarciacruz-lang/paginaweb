@@ -1,0 +1,163 @@
+/* 🎀 ESTILO ROSA Y BLANCO PARA EL BLOG 🎀 */
+.head{font-family: "Arial", sans-serif;
+    background-color: #bb0303;
+    color: #0a0909;
+    margin: 10PX;
+    padding: 0;
+
+}
+.body {
+    font-family: "Arial", sans-serif;
+    background-color: #a71313;
+    color: #444;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #ff7acb;
+    padding: 15px;
+    text-align: center;
+    font-size: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+h2, h3, h4 {
+    color: #ff3fa4;
+    text-align: center;
+}
+
+form {
+    width: 80%;
+    max-width: 500px;
+    margin: auto;
+    background: #ffe3f5;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px #ffaaee;
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    font-size: 18px;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 2px solid #ff99d8;
+    border-radius: 10px;
+    width: 100%;
+}
+
+textarea {
+    min-height: 120px;
+}
+
+button {
+    background-color: #ff3fa4;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #ff69ba;
+}
+
+.post-card {
+    background: #fff0f7;
+    border-radius: 12px;
+    padding: 15px;
+    margin: 15px auto;
+    width: 85%;
+    box-shadow: 0 0 10px #ffbce6;
+}
+
+small {
+    color: #888;
+}
+/* ✅ ESTILO ESPECIAL PARA LOGIN */
+.login-container {
+    width: 90%;
+    max-width: 420px;
+    background: #ffffff;
+    padding: 30px;
+    margin: 50px auto;
+    text-align: center;
+    border-radius: 18px;
+    box-shadow: 0px 0px 18px #ff9edc;
+}
+
+.login-container h2 {
+    color: #ff3fa4;
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.login-container label {
+    font-size: 18px;
+    color: #ff3fa4;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+.login-container input {
+    font-size: 20px;
+    padding: 14px;
+    border: 2px solid #ff69ba;
+    border-radius: 12px;
+    margin-bottom: 18px;
+    width: 100%;
+    background: #fff5fa;
+    outline: none;
+}
+
+.login-container input:focus {
+    border-color: #ff3fa4;
+    box-shadow: 0 0 6px #ffa8de;
+}
+
+.login-container button {
+    width: 100%;
+    background-color: #ff3fa4;
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 14px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.login-container button:hover {
+    background-color: #ff69ba;
+    transform: scale(1.03);
+}
+
+/* ✅ Enlaces de recuperar contraseña o registro */
+.login-container a {
+    display: block;
+    margin-top: 12px;
+    color: #ff3fa4;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+}

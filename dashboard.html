@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>CREAR PUBLICACION </h2>
+
+<form action="/create" method="POST">
+    <input type="text" name="title" placeholder="Título del post" required>
+    <textarea name="content" placeholder="Contenido del post" required></textarea>
+    <button type="submit">Publicar 💖</button>
+</form>
+
+<h3>Mis Publicaciones</h3>
+{% for post in posts %}
+<div class="post-card">
+    <h4>{{ post.title }}</h4>
+    <p>{{ post.content }}</p>
+    <a href="/edit/{{ post.id }}">✏️ Editar</a> |
+    <a style="color:red;" href="/delete/{{ post.id }}" onclick="return confirm('¿Eliminar?')">🗑️ Eliminar</a>
+</div>
+{% else %}
+<p style="text-align:center;">Aún no has creado publicaciones 😊</p>
+{% endfor %}
+{% endblock %}
+
